@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="item.css">
+</head>
+<body>
+
+    <div id="header">
+        <div class="header-content">
+            <img src="..\Assets\image_fb4d3f88-removebg-preview.png" alt="logo" class="small-icon">
+            <h2>ICore Tech</h2>
+        </div>
+        <div class="header-content">
+            <h2>Admin</h2>
+            <img src="..\Assets\userIcon.png" alt="user" class="small-icon" id="userIcon">
+        </div>
+    </div>
+
+    <div id="nav-main-container">
+        <div id="sideBar">
+            <button id="menu">
+                <img src="..\Assets\iconmonstr-menu-left-lined-240.png" alt="menu" id="menuIcon">
+            </button>
+            <nav class="navBar">
+                <img src="..\Assets\image_fb4d3f88-removebg-preview.png" alt="logo" id="small-logo">
+                <ul>
+                    <li>
+                        <img src="..\Assets\homeIcon.png" alt="Home Icon" class="buttonIcon">
+                        <a href="#" class="nav-page-link">Home</a>
+                    </li>
+                    <li>
+                        <img src="..\Assets\stockIcon.png" alt="stockIcon" class="buttonIcon">
+                        <a href="#" class="nav-page-link">Stocks</a>
+                    </li>
+                    <li>
+                        <img src="..\Assets\chartIcon.png" alt="chartIcon" class="buttonIcon">
+                        <a href="#" class="nav-page-link">Chart</a>
+                    </li>
+                    <li>
+                        <img src="..\Assets\supplierIcon.png" alt="supplierIcon" class="buttonIcon">
+                        <a href="#" class="nav-page-link">Suppliers</a>
+                    </li>
+                    <li>
+                        <img src="..\Assets\itemsIcon.png" alt="itemsIcon" class="buttonIcon">
+                        <a href="#" class="nav-page-link">Items</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    <div id="mainContent">
+        <div id="main-page-header">
+            <h1>Stocks</h1>
+        </div>
+        <div class="total-boxes-container">
+            <div class="outer-box">
+                <div class="inner-box">
+                    <span class="label-text"><img src="..\Assets\ItemsIcon.png" alt="Product Icon" class="small-icon-symbol">Total Items</span>
+                    <span class="points-value">67</span>
+                </div>            
+            </div>
+
+            <div>
+                <div class="outer-box">
+                    <div class="inner-box">
+                        <span class="label-text"><img src="..\Assets\orangeWarningSign.png" alt="chesklist icon" class="small-icon-symbol">Low Stock</span>
+                        <span class="points-value">1738</span>
+                    </div>
+                </div> 
+            </div>
+
+            <div>
+                <div class="outer-box">
+                    <div class="inner-box" id="lowStock">
+                        <span class="label-text" id="lowStock"><img src="..\Assets\redWarningSign.png" alt="Warning logo" class="small-icon-symbol">Out of Stock</span>
+                        <span class="points-value">6</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="tab-table">
+            <select name="categories" id="category-list" class="tab-table-dropDown">
+                <option value="Select all category">Select all category</option>
+                <option value="network">Low Stock</option>
+                <option value="Computer">Out of Stock</option>
+        </select>
+        <button id="addSupplier-btn">+ Add Item</button>
+        </div>
+
+        <div class="mainContent-Table">
+           <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                        <th>Sales</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>RAM</td>
+                        <td>Computer</td>
+                        <td>1,500</td>
+                        <td class="td-stocks">1</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>SSD</td>
+                        <td>Computer</td>
+                        <td>3,000</td>
+                        <td class="td-stocks">7</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>System Unit</td>
+                        <td>Computer</td>
+                        <td>30,000</td>
+                        <td class="td-stocks">3</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>Wifi Vendo</td>
+                        <td>Network</td>
+                        <td>11,000</td>
+                        <td class="td-stocks">8</td>
+                    </tr>
+                </tbody>
+           </table>
+        </div>
+    </body>
+    <script src="..\index.js"></script>
+</body>
+</html>

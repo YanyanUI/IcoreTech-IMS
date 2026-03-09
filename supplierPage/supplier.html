@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="supplier.css">
+</head>
+<body>
+     <div id="header">
+        <div class="header-content">
+            <img src="..\Assets\image_fb4d3f88-removebg-preview.png" alt="logo" class="small-icon">
+            <h2>ICore Tech</h2>
+        </div>
+        <div class="header-content">
+            <h2>Admin</h2>
+            <img src="..\Assets\userIcon.png" alt="user" class="small-icon" id="userIcon">
+        </div>
+    </div>
+    
+    <div id="nav-main-container">
+
+    <div id="sideBar">
+        <button id="menu">
+            <img src="..\Assets\iconmonstr-menu-left-lined-240.png" alt="menu" id="menuIcon">
+        </button>
+        <nav class="navBar">
+            <img src="..\Assets\image_fb4d3f88-removebg-preview.png" alt="logo" id="small-logo">
+            <ul>
+                <li>
+                    <img src="..\Assets\homeIcon.png" alt="Home Icon" class="buttonIcon">
+                    <a href="#" class="nav-page-link">Home</a>
+                </li>
+                <li>
+                    <img src="..\Assets\stockIcon.png" alt="stockIcon" class="buttonIcon">
+                    <a href="#" class="nav-page-link">Stocks</a>
+                </li>
+                <li>
+                    <img src="..\Assets\chartIcon.png" alt="chartIcon" class="buttonIcon">
+                    <a href="#" class="nav-page-link">Chart</a>
+                </li>
+                <li>
+                    <img src="..\Assets\supplierIcon.png" alt="supplierIcon" class="buttonIcon">
+                    <a href="#" class="nav-page-link">Suppliers</a>
+                </li>
+                <li>
+                    <img src="..\Assets\itemsIcon.png" alt="itemsIcon" class="buttonIcon">
+                    <a href="#" class="nav-page-link">Items</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="mainContent">
+        <div id="main-page-header">
+            <h1>Suppliers</h1>
+        </div>
+    <div class="supplier-boxes-container">
+        <div class="outer-box">
+            <div class="inner-box">
+            <span class="label-text"><img src="..\Assets\blueSupplier.png" alt="supplier Icon" class="small-icon-symbol">Total Supplier</span>
+            <span class="points-value">67</span>
+            </div>            
+        </div>
+
+        <div>
+            <div class="outer-box">
+                <div class="inner-box">
+                    <span class="label-text"><img src="..\Assets\activeSupplier.png" alt="greenSupplier icon" class="small-icon-symbol">Active Supplier</span>
+                    <span class="points-value">1738</span>
+                </div>
+            </div> 
+        </div>
+
+        <div>
+            <div class="outer-box">
+                <div class="inner-box" id="lowStock">
+                    <span class="label-text" id="lowStock"><img src="..\Assets\inactiveSupplier.png" alt="Warning logo" class="small-icon-symbol">Inactive Supplier</span>
+                    <span class="points-value">69</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="tab-table">
+        <select name="categories" id="category-list" class="tab-table-dropDown">
+            <option value="Select all category">Select all category</option>
+            <option value="network">Active</option>
+            <option value="Computer">Inactive</option>
+        </select>
+        <button id="addSupplier-btn">+ Add Supplier</button>
+    </div>
+
+    <div class="mainContent-Table">
+           <table>
+                <thead>
+                    <tr>
+                        <th>Supplier</th>
+                        <th>Contact Name</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                        <th>Address</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>GhianTech</td>
+                        <td>Ghian EngelBert</td>
+                        <td>09676767676</td>
+                        <td class="td-stocks">GhianTech@gmail.com</td>
+                        <td class="td-status">St. Avenido</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>AjElectronics</td>
+                        <td>John Aj</td>
+                        <td>09173817381</td>
+                        <td class="td-stocks">AjElectronics@gmail.com</td>
+                        <td class="td-status">312 St. Davao</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>EngelBertStock</td>
+                        <td>EngelBert</td>
+                        <td>096969696</td>
+                        <td class="td-stocks">EBS@gmail.com</td>
+                        <td class="td-status">3-A Southern</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>JohnTech</td>
+                        <td>John Doe</td>
+                        <td>0978978978</td>
+                        <td class="td-stocks">JohnTech@gmail.com</td>
+                        <td class="td-status">St. Banana</td>
+                    </tr>
+                </tbody>
+           </table>
+        </div>
+    <script src="..\index.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stock.css">
+</head>
+<body>
+
+    <div id="header">
+        <div class="header-content">
+            <img src="..\Assets\image_fb4d3f88-removebg-preview.png" alt="logo" class="small-icon">
+            <h2>ICore Tech</h2>
+        </div>
+        <div class="header-content">
+            <h2>Admin</h2>
+            <img src="..\Assets\userIcon.png" alt="user" class="small-icon" id="userIcon">
+        </div>
+    </div>
+
+    <div id="nav-main-container">
+
+    <div id="sideBar">
+        <button id="menu">
+            <img src="..\Assets\iconmonstr-menu-left-lined-240.png" alt="menu" id="menuIcon">
+        </button>
+        <nav class="navBar">
+            <img src="..\Assets\image_fb4d3f88-removebg-preview.png" alt="logo" id="small-logo">
+            <ul>
+                <li>
+                    <img src="..\Assets\homeIcon.png" alt="Home Icon" class="buttonIcon">
+                    <a href="#" class="nav-page-link">Home</a>
+                </li>
+                <li>
+                    <img src="..\Assets\stockIcon.png" alt="stockIcon" class="buttonIcon">
+                    <a href="#" class="nav-page-link">Stocks</a>
+                </li>
+                <li>
+                    <img src="..\Assets\chartIcon.png" alt="chartIcon" class="buttonIcon">
+                    <a href="#" class="nav-page-link">Chart</a>
+                </li>
+                <li>
+                    <img src="..\Assets\supplierIcon.png" alt="supplierIcon" class="buttonIcon">
+                    <a href="#" class="nav-page-link">Suppliers</a>
+                </li>
+                <li>
+                    <img src="..\Assets\itemsIcon.png" alt="itemsIcon" class="buttonIcon">
+                    <a href="#" class="nav-page-link">Items</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div id="mainContent">
+        <div id="main-page-header">
+            <h1>Stocks</h1>
+        </div>
+        <div class="total-boxes-container">
+            <div class="outer-box">
+                <div class="inner-box">
+                    <span class="label-text"><img src="..\Assets\productIcon.png" alt="Product Icon" class="small-icon-symbol">Total Product</span>
+                    <span class="points-value">67</span>
+                </div>            
+            </div>
+
+            <div>
+                <div class="outer-box">
+                    <div class="inner-box">
+                        <span class="label-text"><img src="..\Assets\list.png" alt="chesklist icon" class="small-icon-symbol">Total Quantity</span>
+                        <span class="points-value">1738</span>
+                    </div>
+                </div> 
+            </div>
+
+            <div>
+                <div class="outer-box">
+                    <div class="inner-box" id="lowStock">
+                        <span class="label-text" id="lowStock"><img src="..\Assets\orangeWarningSign.png" alt="Warning logo" class="small-icon-symbol">Low Stock</span>
+                        <span class="points-value">6</span>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="outer-box">
+                    <div class="inner-box" id="outStock">
+                        <span class="label-text" id="outStock"><img src="..\Assets\redWarningSign.png" alt="Low icon" class="small-icon-symbol">Out of Stock</span>
+                        <span class="points-value">9</span>
+                    </div>
+                </div>
+            </div>
+    </div>
+    
+    <div id="tab-table">
+        <select name="categories" id="category-list" class="tab-table-dropDown">
+            <option value="Select all category">Select all category</option>
+            <option value="network">Network</option>
+            <option value="Computer">Computer</option>
+        </select>
+        <select name="status" id="status-list" class="tab-table-dropDown">
+            <option value="">Select all Category</option>
+            <option value="">Low Stock</option>
+            <option value="">Out of Stock</option>
+        </select>
+    </div>
+        <div class="mainContent-Table">
+           <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Category</th>
+                        <th>Supplier</th>
+                        <th>Stocks</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Wifi Vendo</td>
+                        <td>Network</td>
+                        <td>TechGar</td>
+                        <td class="td-stocks">8</td>
+                        <td class="td-status">Low Stock</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>System Unit</td>
+                        <td>Computers</td>
+                        <td>BertTech</td>
+                        <td class="td-stocks">5</td>
+                        <td class="td-status">Low Stock</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>RAM</td>
+                        <td>Computer Parts</td>
+                        <td>TechAJ</td>
+                        <td class="td-stocks">15</td>
+                        <td class="td-status">On Stock</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>SSD</td>
+                        <td>Computer Parts</td>
+                        <td>TechYan</td>
+                        <td class="td-stocks">11</td>
+                        <td class="td-status">On Stock</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>Lan Cable</td>
+                        <td>Network</td>
+                        <td>TechATech</td>
+                        <td class="td-stocks">10</td>
+                        <td class="td-status">On Stock</td>
+                    </tr>
+                </tbody>
+
+           </table>
+        </div>
+
+    </div>    
+
+    </div>
+    <script src="..\index.js"></script>
+    <script src="stock.js"></script>
+</body>
+</html>
