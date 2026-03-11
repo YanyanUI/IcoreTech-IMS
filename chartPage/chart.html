@@ -57,7 +57,6 @@
 
         <div id="tab-table">
             <select name="categories" id="category-list" class="tab-table-dropDown">
-                <option value="">Month</option>
                 <option value="">1 Month</option>
                 <option value="">5 Month</option>
                 <option value="">1 Month</option>
@@ -70,8 +69,14 @@
             </select>
         </div>
 
+        <div id="chart-container">
         <div id="myChart-container">
             <canvas id="myChart"></canvas>
+        </div>
+            
+        <div id="monthChart-container">
+            <canvas id="monthChart"></canvas>
+        </div>
         </div>
 
         <div class="total-boxes-container">
@@ -117,6 +122,30 @@
                     data: [8, 25, 8],
                     borderWidth: 1,
                     backgroundColor: '#5170ff',
+                    }]
+                    },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                    }
+                });
+
+            const ctx2 = document.getElementById("monthChart");
+
+            const monthChart = new Chart(ctx2, {
+                type: 'line',
+                data: {
+                    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul','Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    datasets: [{
+                    label: "Stocks Overview by Month",
+                    label1: 'Feb',
+                    data: [5, 8, 9, 11, 13, 15, 16, 17, 19, 21, 23, 25],
+                    borderWidth: 3,
+                    backgroundColor: '#5069bb',
+                    fill: true
                     }]
                     },
                 options: {
