@@ -1,5 +1,6 @@
 body{
     background-color: #d9d9d9;
+    overflow: hidden;
 }
 #header{
     display: flex;
@@ -38,6 +39,7 @@ body{
 #menu{
     border: none;
     background-color:#d9d9d9;
+    border-radius: 8px;
 }
 #menu:hover{
     background-color: #5170ff;
@@ -53,8 +55,8 @@ body{
     margin-top: 10px;
 }
 .buttonIcon{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 .navBar{
     display: none;
@@ -111,9 +113,13 @@ a:hover, li:hover{
     margin-top: 5px;
     background-color: #b4b4b4;
     border-radius: 12px;
-    padding: 10px;
+    padding: 2px;
     font-family: Arial, sans-serif;
     font-weight: bold;
+}
+#main-page-header h1{
+    font-size: 45px;
+    margin: 2px;
 }
 
 .supplier-boxes-container{
@@ -219,6 +225,34 @@ a:hover, li:hover{
 /*Table ni*/
 .mainContent-Table{
     width: 100%;
+    height: 15rem;
+    overflow-y: auto;
+    border-radius: 8px;
+}
+
+.table{
+    font-family: 'Inter', sans-serif;
+    border-collapse: collapse;
+    font-size: 24px;
+    width: 100%;
+}
+.table th{
+    background-color: #5170ff;
+    color: #fff;
+    text-align: left;
+    position: sticky;
+    top: 0;
+}
+.table th, .table td{
+    padding: 6px 8px;
+    font-weight: normal;
+}
+.table tbody tr:nth-of-type(even){
+    background-color: #b4b4b4;
+}
+/*
+.mainContent-Table{
+    width: 100%;
 }
 table {
   width: 100%;
@@ -239,3 +273,4 @@ th, td {
   padding: 8px;
   text-align: left;
 }
+  */
