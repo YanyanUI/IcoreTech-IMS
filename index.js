@@ -8,23 +8,23 @@ menu.addEventListener('click', () => {
 const stock = document.getElementById("stockBtn");
 
 stock.addEventListener('click', () => {
-    document.location.href = "../stockPage/stock.html";
+    document.location.href = "./stockPage/stock.html";
 })
 
 const chart = document.getElementById("chartBtn");
 
 chart.addEventListener('click', () => {
-    document.location.href = "../chartPage/chart.html";
+    document.location.href = "./chartPage/chart.html";
 })
 
 const supplier = document.getElementById('supplierBtn');
 
 supplier.addEventListener('click', () => {
-    document.location.href = "../supplierPage/supplier.html";
+    document.location.href = "./supplierPage/supplier.html";
 })
 
 const item = document.getElementById('itemBtn');
 
 item.addEventListener('click', () => {
-    document.location.href = "../itemPage/item.html";
+    document.location.href = "./itemPage/item.html";
 })
