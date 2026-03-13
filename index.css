@@ -133,6 +133,9 @@ ul{
     flex-direction: column;
     align-items: center;
     border-radius: 18px;
+    border: #fff;
+    border-left: solid 5px #5170ff;
+    border-bottom: solid 3px #5170ff;
 }
 .MainBtn:hover{
     background-color: #5170ff;
