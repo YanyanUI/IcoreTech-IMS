@@ -136,6 +136,8 @@ a:hover, li:hover{
     height: 7rem;
     border-radius: 15px;
     background-color: #fff;
+    border-left: solid 5px #5170ff;
+    border-bottom: solid 3px #5170ff;
  }
  .inner-box{
     display: flex;
