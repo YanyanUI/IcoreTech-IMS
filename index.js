@@ -5,7 +5,7 @@ menu.addEventListener('click', () => {
     verticalNav.classList.toggle('show');
 });
 
-const stock = document.getElementById("stockBtn");
+const stock = document.getElementById("stock-Btn");
 
 stock.addEventListener('click', () => {
     document.location.href = "./stockPage/stock.html";
